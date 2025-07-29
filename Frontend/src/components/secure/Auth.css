@@ -1,0 +1,114 @@
+.auth-back{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background: #2b2b34;
+  min-height: 100vh;
+}
+
+.auth-container {
+  min-width: 400px;
+  margin: 50px auto;
+  padding: 25px 20px;
+  background: #14141f;
+  border-radius: 14px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+  color: #ffffff;
+}
+
+/* Heading */
+.auth-container h2 {
+  margin-bottom: 20px;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 1.8rem;
+}
+
+/* Input fields */
+.auth-container input {
+  width: 100%;
+  padding: 12px 14px;
+  margin: 12px 0;
+  background: #2b2b3d;
+  border: 1px solid #444;
+  border-radius: 10px;
+  font-size: 16px;
+  color: #ffffff;
+  transition: 0.3s;
+  box-sizing: border-box;
+}
+
+.auth-container input:focus {
+  border-color: #00bcd4;
+  outline: none;
+  box-shadow: 0 0 8px rgba(0, 188, 212, 0.6);
+  background: #2e2e42;
+}
+
+/* Button */
+.auth-container button {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  background: #00bcd4;
+  color: #ffffff;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  box-shadow: 0 4px 14px rgba(0, 188, 212, 0.3);
+}
+
+.auth-container button:hover {
+  background: #00acc1;
+  transform: translateY(-2px);
+}
+
+/* Error message */
+.auth-container .error {
+  color: #ff6b6b;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+/* Password visibility toggle */
+.toggle-password {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #bbbbbb;
+}
+
+/* For icon positioning */
+.input-group {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  .auth-container {
+    margin: 20px;
+    padding: 18px;
+  }
+
+  .auth-container h2 {
+    font-size: 1.5rem;
+  }
+
+  .auth-container input,
+  .auth-container button {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .toggle-password {
+    right: 10px;
+  }
+}
